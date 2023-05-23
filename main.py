@@ -12,7 +12,7 @@ def get_news():
     image_url = []
     if request.method == "GET":
         data = requests.get(
-            "https://newsapi.org/v2/everything?q=Apple&from=2023-05-22&sortBy=popularity&apiKey=913dfba790dc45c58171f4a119b33269")
+            "https://newsapi.org/v2/everything?q=Apple&from=2023-05-22&sortBy=popularity&apiKey=API_KEY")
         res = data.json()["articles"]
         
 
